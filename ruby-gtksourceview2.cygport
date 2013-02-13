@@ -1,0 +1,11 @@
+inherit rubygem
+
+NAME="ruby-gtksourceview2"
+VERSION=1.2.1
+RELEASE=1
+CATEGORY="Ruby"
+SUMMARY="Ruby GtkSourceView 2.x bindings"
+DESCRIPTION="Ruby/GtkSourceView2 is a Ruby binding of gtksourceview-2.x."
+HOMEPAGE="http://ruby-gnome2.sourceforge.jp/"
+
+DEPS_PATH="/usr/lib/ruby/gems/${RUBY_VERSION}/gems/glib2-*/lib:/usr/lib/ruby/gems/${RUBY_VERSION}/gems/gtk2-*/lib"
