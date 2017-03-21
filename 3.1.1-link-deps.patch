@@ -1,0 +1,11 @@
+--- origsrc/gtksourceview2-3.1.1/ext/gtksourceview2/extconf.rb	2017-03-19 18:30:17.260769000 -0500
++++ src/gtksourceview2-3.1.1/ext/gtksourceview2/extconf.rb	2017-03-19 18:38:10.097599800 -0500
+@@ -30,7 +30,7 @@ rescue LoadError
+   require 'mkmf-gnome2'
+ end
+ 
+-["glib2", "atk", "pango", "gdk_pixbuf2", "gtk2"].each do |package|
++["glib2", "atk", "pango", "gtk2"].each do |package|
+   directory = "#{package}#{version_suffix}"
+   build_dir = "#{directory}/tmp/#{RUBY_PLATFORM}/#{package}/#{RUBY_VERSION}"
+   add_depend_package(package, "#{directory}/ext/#{package}",
