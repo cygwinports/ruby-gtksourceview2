@@ -1,0 +1,13 @@
+--- origsrc/gtksourceview2-3.1.8/ext/gtksourceview2/extconf.rb	2017-09-26 04:11:37.687758800 -0500
++++ src/gtksourceview2-3.1.8/ext/gtksourceview2/extconf.rb	2017-09-26 04:12:36.421913500 -0500
+@@ -34,10 +34,7 @@ end
+   "glib2",
+   "gobject-introspection",
+   "gio2",
+-  "atk",
+-  "cairo-gobject",
+   "pango",
+-  "gdk_pixbuf2",
+   "gtk2",
+ ].each do |package|
+   directory = "#{package}#{version_suffix}"
